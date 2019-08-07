@@ -24,8 +24,7 @@ public class Program {
     }
 
     private static void Test(int[] protein, int[] carbs, int[] fat, String[] dietPlans, int[] expected) {
-        String result = Arrays.equals(SelectMeals(protein, carbs, fat, dietPlans), (expected)) ? "PASS" : "FAIL";
+        String result = Arrays.equals(Diet.SelectMeals(protein, carbs, fat, dietPlans), (expected)) ? "PASS" : "FAIL";
         System.out.println(result);
     }
-}
 }
